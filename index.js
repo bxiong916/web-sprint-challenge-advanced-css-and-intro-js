@@ -243,150 +243,133 @@ console.log(getArtistByIndex(artists, 19));
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were 
 born the 20th century (1900-2000) */
 
-function get20s(/* Code here */){
 
-/* Code here */
 function get20s(artists){
   let get20th = [];
   for(let i = 0; i<artists.length; i++){
-    if (artists[i].years = 1900 - 2000) {
-      get20th.push(artists[i]);
+    if (artists[i].years.slice(0,4) > 1900 && artists[i].years.slice(0,4) < 2000) {
+      get20th.push(artists[i].name);
     }
     return get20th;
   }
 }
 console.log(get20s(artists));
 
-/* Task 5: Create a function called `removeArtist` that takes two arguments:
-*     (1) artists array
-*     (2) a number which is the desired index in the array.
-* removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.*/
-* 
+// /* Task 5: Create a function called `removeArtist` that takes two arguments:
+// *     (1) artists array
+// *     (2) a number which is the desired index in the array.
+// * removeArtist removes an artist from the array at the index and console.logs the length of the remaining dataset.*/
+
  
-function removeArtist(artists,index) {
-  artists.splice(index,1);
-  console.log(artists);
-  return(artists);
-}
+// function removeArtist(artists,index) {
+//   artists.splice(index,1);
+//   console.log(artists);
+//   return(artists);
+// }
 
-removeArtist(artists,0);
+// removeArtist(artists,0);
 
-/**
-* 
-* For example, if removeArtist is invoked with the data and the number 0,
-* it will remove Amedeo Modigliani from our dataset and log the number 19. 
-* 
-* Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
-*/
-
-
-function removeArtist(/*code here*/) {
-  function removeArtist(artists,index) {
-      artists.splice(index,1);
-      /* code here */
-      console.log(artists);
-      return(artists);
-    }
-}
-    removeArtist(artists,0);
+// /**
+// * 
+// * For example, if removeArtist is invoked with the data and the number 0,
+// * it will remove Amedeo Modigliani from our dataset and log the number 19. 
+// * 
+// * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
+// */
 
 
+// /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
+// For example, you could add the following information: 
+// id: 21
+// name: Your Name Here, 
+// years: Your Birth Year - current day,
+// genre: Web Design, 
+// nationality: Your Nationality Here
+// bio: Add 1-2 sentences (or use lorem ipsum) 
 
-For example, you could add the following information: 
-id: 21
-name: Your Name Here, 
-years: Your Birth Year - current day,
-genre: Web Design, 
-nationality: Your Nationality Here
-bio: Add 1-2 sentences (or use lorem ipsum) 
+// At the end, this function should console.log() the new array with information added"*/
 
-At the end, this function should console.log() the new array with information added"*/
+// const newArtist = [
+// {
+//     "id": 21,
+//     "name": "Bill Xiong",
+//     "years": "1983 - 5/29/2020",
+//     "genre": "Full stack web developer",
+//     "nationality": "Hmong",
+//     "bio": "There is no fate but what we make",
+// }	
+// ]
+// function addArtist(artists,newArray){
+// artists.push(newArray);
+// console.log(artists);
+// return artists;
+// }
+// addArtist(artists,newArtist);
 
-function addArtist(/* Code here */){
 
-const newArtist = [
-{
-    "id": 21,
-    "name": "Bill Xiong",
-    "years": "1983 - 5/29/2020",
-    "genre": "Full stack web developer",
-    "nationality": "Hmong",
-    "bio": "There is no fate but what we make",
-}	
-]
-function addArtist(artists,newArray){
-artists.push(newArray);
-console.log(artists);
-return artists;
-}
-addArtist(artists,newArtist);
-}
+// /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
-/* Task 7: Create a function called lotsOfArt() that takes one argument: 
+//   (1) artists array 
 
-  (1) artists array 
+// and returns an array with names of artists who painted more than 100 paintings.
 
-and returns an array with names of artists who painted more than 100 paintings.
+// For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
-
-function lotsOfArt(artists){
-    let art = [];
-    let num = [];
-  for(let i = 0; i<artists.length; i++){
-    num = (artists[i].paintings);
-    if (num >= 100){
-      art.push(artists[i].name);
-    }
-    }
-  console.log(art);
-  return (art);  
-}
-lotsOfArt(artists);
-}
+// function lotsOfArt(artists){
+//     let art = [];
+//     let num = [];
+//   for(let i = 0; i<artists.length; i++){
+//     num = (artists[i].paintings);
+//     if (num >= 100){
+//       art.push(artists[i].name);
+//     }
+//     }
+//   console.log(art);
+//   return (art);  
+// }
+// lotsOfArt(artists);
 
 
 
-// 🎨🎨 STRETCH 🎨🎨//
+// // 🎨🎨 STRETCH 🎨🎨//
 
 
-/* STRETCH 1: Programtically console.log HTML element structure.
+// /* STRETCH 1: Programtically console.log HTML element structure.
 
-In HTML, every artist and associated content uses the following structure: 
+// In HTML, every artist and associated content uses the following structure: 
 
-<div id="artist">
-<div class="image">
-  <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
-</div>
-<div class = "name">
- <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Vincent Van Gogh</a>
-</div>
-<div class = "bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.</div>
-</div>
+// <div id="artist">
+// <div class="image">
+//   <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/starry-night-by-vincent-van-gogh-vincent-van-gogh.jpg"/>
+// </div>
+// <div class = "name">
+//  <a href="https://en.wikipedia.org/wiki/Vincent_van_Gogh"> Vincent Van Gogh</a>
+// </div>
+// <div class = "bio">Vincent Willem van Gogh (Dutch: [ˈvɪnsɛnt ˈʋɪləm vɑŋ ˈɣɔx] (listen); 30 March 1853 – 29 July 1890) was a Dutch Post-Impressionist painter who is among the most famous and influential figures in the history of Western art. In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life. They include landscapes, still lifes, portraits and self-portraits, and are characterised by bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art. However, he was not commercially successful, and his suicide at 37 followed years of mental illness and poverty.</div>
+// </div>
 
-Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log data like the example above. 
+// Create a function called `getHTML()` that takes the parameter `data` and uses a for..in loop to format and console.log data like the example above. 
 
-The function should console.log 50 chunks of HTML code that match the structure above. 
+// The function should console.log 50 chunks of HTML code that match the structure above. 
 
-‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
+// ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+// function getHTML(/* Code here */){
 
-  /* Code here */
+//   /* Code here */
 
-}
-
-
-/* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
-
-function randomize(/* Code here */){
-
-  /* Code here */
-
-}
+// }
 
 
-/* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 
-1900s with .filter, for example) */
+// /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
+
+// function randomize(/* Code here */){
+
+//   /* Code here */
+
+// }
+
+
+// /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 
+// 1900s with .filter, for example) */
