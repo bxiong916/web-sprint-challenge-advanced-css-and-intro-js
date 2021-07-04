@@ -23,10 +23,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe preprocessing to someone new to CSS?
-2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
-3. How would you explain the concept of a variable to someone new to programming?
-4. What is the purpose of using functions in code?
-5. What is JSON data?
+   Preprocessing is simply a more robust syntax for CSS written in a different language. Preprocessors combines the code which is 
+   written using a special combiner. They then use that to create a CSS file, which can then be referenced by the main HTML document.
+   When using Preprocessor, you will be able to program in normal CSS just as you would if the preprocessor were not in place. 
+   The good thing is you also have more options available to you. 
+
+2. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? FAVORITE: Mixins are a way of including a bunch of properties from one rule-set into another rule-set. TROUBLE: Nesting, because it gives you the ability to use nesting instead with the combination with cascading.It introduces the ability to nest one style rule inside another, with the selector of the child rule relative to the selector of the parent rule. This increases the modularity and maintainability of CSS stylesheets.
+
+3. How would you explain the concept of a variable to someone new to programming? A way of including a bunch of properties from one rule-set into another rule-set.
+
+4. What is the purpose of using functions in code? A function is a block of organized, reusable code that is used to perform a single, 
+related action. Functions provide better modularity for your application and a high degree of code reusing.
+
+5. What is JSON data? JSON stands for JavaScript Object Notation. It is a lightweight format for storing/transporting data. Is often
+used when data is sent from a server to a web page.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
